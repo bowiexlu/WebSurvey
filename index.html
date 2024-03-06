@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webbundersökning_29</title>
+<link rel="stylesheet" type="text/css"  href="styles.css">
+</head>
+
+<body>
+  <div id="layouyt">
+  <header>
+    <h1>Webbundersökning_programutvecklare</h1>
+  </header>
+  
+  <form method="post" action="add_tack.php">
+    <fieldset>
+      <legend>Undersökning</legend>
+      <h3>1. Vilken årskurs går du i? </h3>
+      <p>
+      <input type="radio" name="q1" id="q1_1" value="k1"><label for="q1_1">1:a året</label><br>
+      <input type="radio" name="q1" id="q1_2" value="k2"><label for="q1_2">2:a året</label><br>
+      <input type="radio" name="q1" id="q1_3" value="k3"><label for="q1_3">3:e året</label><br>
+      <input type="radio" name="q1" id="q1_4" value="k4"><label for="q1_4">4:e året</label>
+      </p>
+      
+      <h3>2. Vilken åldersgrupp tillhör du? </h3>
+      <p>
+      <input type="radio" name="q2" id="q2_1" value="15-17"><label for="q2_1">15 – 17 år</label><br>
+      <input type="radio" name="q2" id="q2_2" value="18-20"><label for="q2_2">18 – 20 år</label><br>
+      <input type="radio" name="q2" id="q2_3" value="21-23"><label for="q2_3">21 – 23 år</label><br>
+      <input type="radio" name="q2" id="q2_4" value="24"><label for="q2_4">24 år-</label>
+      </p>
+      
+      <h3>3. Kön</h3>
+      <p>
+      <input type="radio" name="q3" id="q3_1" value="kvinna"><label for="q3_1">Kvinna</label><br>
+      <input type="radio" name="q3" id="q3_2" value="man"><label for="q3_2">Man</label>
+      </p>
+     
+      <h3>4. Vilken hemkommun bor du i?</h3>
+      <p>
+      <input type="radio" name="q4" id="q4_1" value="Vasa"><label for="q4_1">Vasa</label><br>
+      <input type="radio" name="q4" id="q4_2" value="Korsholm"><label for="q4_2">Korlsholm</label><br>
+      <input type="radio" name="q4" id="q4_3" value="Malax"><label for="q4_3">Malax</label><br>
+      <input type="radio" name="q4" id="q4_4" value="Vörå"><label for="q4_4">Vörå</label><br>
+      <input type="radio" name="q4" id="q4_5" value="annan"><label for="q4_5">Annan, vilken?</label>
+      <input type="text" name="annan_kommun">
+      </p>
+      
+      <h3>5. Hur bor du?</h3>
+      <P>
+      <input type="radio" name="q5" id="q5_1" value="föräldrar"><label for="q5_1">Med mina föräldrar</label><br>
+      <input type="radio" name="q5" id="q5_2" value="agen_lägenhet"><label for="q5_2">I egen lägenhet</label><br>
+      <input type="radio" name="q5" id="q5_3" value="hyr_voas"><label for="q5_3">Hyr av VOAS</label><br>
+      <input type="radio" name="q5" id="q5_4" value="annan"><label for="q5_4">Annan, var?</label>
+      <input type="text" name="annan_bor">
+      </P>
+      
+      <h3>6. Vem fick dig att välja programutvecklare?</h3>
+      <p>
+      <input type="radio" name="q6" id="q6_1" value="själv"><label for="q6_1">Eget val</label><br>
+      <input type="radio" name="q6" id="q6_2" value="föräldrar"><label for="q6_2">Mina föräldrar</label><br>
+      <input type="radio" name="q6" id="q6_3" value="vänner"><label for="q6_3">Vänner</label><br>
+      <input type="radio" name="q6" id="q6_4" value="annan"><label for="q6_4">Annan, Vem?</label>
+      <input type="text" name="annan_person">
+      </p>
+      
+      <h3>7. Varför valde du utbildningen?</h3>
+      <p>
+      <input type="radio" name="q7" id="q6_1" value="gillar_datorer"><label for="q7_1">Jag tycker om att arbeta med datorer</label><br>
+      <input type="radio" name="q7" id="q6_1" value="få_yrke"><label for="q7_2">Jag vill få ett yrke</label><br>
+      <input type="radio" name="q7" id="q6_1" value="utbikdning_vasa"><label for="q7_3">Utbildningen fanns i Vasa</label><br>
+      <input type="radio" name="q7" id="q6_1" value="kompis_valde"><label for="q7_4">För att en kompis valde utbildningen</label><br>
+      <input type="radio" name="q7" id="q6_1" value="kom_inte_in_annastans"><label for="q7_5">Jag kom inte in någon annanstans</label><br>
+      <input type="radio" name="q7" id="q6_1" value="annan"><label for="q7_6">Annan orsak, vilken?</label>
+      <input type="text" name="annan_orsak">
+      </p>
+      
+      <h3>8. Ta ställning till följande påstående gällande programutvecklarutbildningen (svarsalternativ 1 – 5)</h3>
+      <div id="margins">
+      	<div class="adjust">&nbsp;</div>
+      <table>
+        <tr>
+          <td> </td>
+          <td><p align="center">1</p></td>
+          <td><p align="center">2</p></td>
+          <td><p align="center">3</p></td>
+          <td><p align="center">4</p></td>
+          <td><p align="center">5</p></td>
+          
+        </tr>
+        <tr>
+          <td><label for="q8a" class="adjust">A. Jag är nöjd med datautrustningen</label></td>
+          <td><input type="radio" name="q8a" value="1" align="center"></td>
+          <td><input type="radio" name="q8a" value="2" align="center"></td>
+          <td><input type="radio" name="q8a" value="3" align="center"></td>
+          <td><input type="radio" name="q8a" value="4" align="center"></td>
+          <td><input type="radio" name="q8a" value="5" align="center"></td>
+         </tr>
+         <tr>
+          <td><label for="q8b" class="adjust">B. Läsordningarna är välplanerade</label></td>
+          <td><input type="radio" name="q8b" value="1"></td>
+          <td><input type="radio" name="q8b" value="2"></td>
+          <td><input type="radio" name="q8b" value="3"></td>
+          <td><input type="radio" name="q8b" value="4"></td>
+          <td><input type="radio" name="q8b" value="5"></td>
+         </tr>
+         <tr>
+          <td><label for="q8c" class="adjust">C. Jag är nöjd med datalärarna</label></td>
+          <td><input type="radio" name="q8c" value="1"></td>
+          <td><input type="radio" name="q8c" value="2"></td>
+          <td><input type="radio" name="q8c" value="3"></td>
+          <td><input type="radio" name="q8c" value="4"></td>
+          <td><input type="radio" name="q8c" value="5"></td>
+         </tr>
+         <tr>
+          <td><label for="q8d" class="adjust">D. Jag är nöjd med övriga lärare</label></td>
+          <td><input type="radio" name="q8d" value="1"></td>
+          <td><input type="radio" name="q8d" value="2"></td>
+          <td><input type="radio" name="q8d" value="3"></td>
+          <td><input type="radio" name="q8d" value="4"></td>
+          <td><input type="radio" name="q8d" value="5"></td>
+         </tr>
+         <tr>
+          <td><label for="q8e" class="adjust">E. Jag är nöjd med klasserna</label></td>
+          <td><input type="radio" name="q8e" value="1"></td>
+          <td><input type="radio" name="q8e" value="2"></td>
+          <td><input type="radio" name="q8e" value="3"></td>
+          <td><input type="radio" name="q8e" value="4"></td>
+          <td><input type="radio" name="q8e" value="5"></td>
+         </tr>
+       </table>
+       </div>
+       <p>
+       <input type="submit" value="skicka" align="middle" >
+       </p>   
+      </fieldset>
+    </form>
+    </div>
+</body>
+</html>
